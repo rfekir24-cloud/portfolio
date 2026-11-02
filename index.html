@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redouan Fekir — Quantitative Finance & Machine Learning Portfolio</title>
+  <title>Redouan FEKIR — Ingénierie Financière de Marché, Quant & Data</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,206 +11,396 @@
 </head>
 <body>
   <div class="bg-grid"></div>
+
   <header class="navbar">
     <div class="container nav-inner">
       <a href="#" class="brand">
         <span class="brand-dot"></span>
-        <span class="brand-name">Redouan Fekir</span>
-        <span class="brand-tag">Quant & ML</span>
+        <span class="brand-name">Redouan FEKIR</span>
+        <span class="brand-tag">M2 Ingénierie Financière</span>
       </a>
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#methodology">Methodology</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub @rfekir24-cloud ↗</a>
+        <a href="#projets">Projets</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#formation">Formation</a>
+        <a href="#competences">Compétences</a>
+        <a href="assets/Redouan_FEKIR_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">Télécharger CV (PDF) ↓</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <!-- Hero / Profil -->
     <section class="hero">
-      <div class="hero-badge">QUANTITATIVE RESEARCH • NLP • MACHINE LEARNING</div>
-      <h1>Empirical Modeling with <span class="gradient-text">Strict Temporal Integrity</span></h1>
+      <div class="hero-profile">
+        <img src="assets/profile_0.jpg" alt="Portrait de Redouan FEKIR" class="profile-avatar" />
+        <div class="hero-badge">MASTER 2 INGÉNIERIE FINANCIÈRE DE MARCHÉ • UNIVERSITÉ DE LORRAINE</div>
+      </div>
+
+      <h1>Redouan <span class="gradient-text">FEKIR</span></h1>
       <p class="hero-sub">
-        Designing leak-free forecasting pipelines, high-frequency econometric event studies, and interpretable machine learning systems across macro-finance and customer analytics.
+        Spécialisé en <strong>finance quantitative de marché</strong>, <strong>économétrie des séries temporelles</strong> et <strong>Data / Machine Learning appliqué</strong>. Conception de pipelines d'analyse financière, études d'événements intrajournalières (FOMC, FFER, ETF) et automatisation de reporting décisionnel (Python, SQL, R, EViews, Power BI).
       </p>
+
+      <div class="contact-bar">
+        <span>📍 Metz, France</span>
+        <span>•</span>
+        <a href="tel:+33754590633">📞 +33 (0)7 54 59 06 33</a>
+        <span>•</span>
+        <a href="mailto:fekir.redouan@gmail.com">✉️ fekir.redouan@gmail.com</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/redouanfekir-rf/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <span>•</span>
+        <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+
       <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Explore Featured Projects</a>
-        <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer" class="btn-secondary">View GitHub Profile ↗</a>
+        <a href="#projets" class="btn-primary">Découvrir mes Projets</a>
+        <a href="assets/Redouan_FEKIR_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">Consulter mon CV complet (PDF) ↗</a>
+        <a href="https://www.linkedin.com/in/redouanfekir-rf/" target="_blank" rel="noopener noreferrer" class="btn-secondary">Profil LinkedIn ↗</a>
       </div>
 
       <div class="metrics-strip">
         <div class="metric-card">
-          <span class="metric-value">0 Look-Ahead</span>
-          <span class="metric-label">Expanding Walk-Forward & P80 Cutoffs</span>
+          <span class="metric-value">M2 IFM</span>
+          <span class="metric-label">Ingénierie Financière de Marché — Univ. de Lorraine</span>
         </div>
         <div class="metric-card">
-          <span class="metric-value">30-Min Window</span>
-          <span class="metric-label">Intraday FOMC Event Study Precision</span>
+          <span class="metric-value">Quant &amp; NLP</span>
+          <span class="metric-label">Séries Temporelles (ARIMA, VAR, GARCH) &amp; Event Studies</span>
         </div>
         <div class="metric-card">
-          <span class="metric-value">HC3 + SHAP</span>
-          <span class="metric-label">Robust Econometric & ML Inference</span>
+          <span class="metric-value">Data &amp; BI</span>
+          <span class="metric-label">Python, SQL, RStudio, EViews, Power BI, Tableau, VBA</span>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <!-- Projets GitHub & Académiques -->
+    <section id="projets" class="section">
       <div class="section-header">
         <div>
-          <span class="eyebrow">PORTFOLIO SHOWCASE</span>
-          <h2>Featured Repositories</h2>
+          <span class="eyebrow">PORTFOLIO DE PROJETS &amp; RECHERCHE</span>
+          <h2>Projets Quantitatifs, Data Science &amp; Travaux Académiques</h2>
         </div>
         <div class="filter-pills" role="tablist">
-          <button class="pill active" data-filter="all">All Projects (2)</button>
-          <button class="pill" data-filter="quant">Quant Macro & NLP</button>
-          <button class="pill" data-filter="ml">Predictive ML & Retention</button>
+          <button class="pill active" data-filter="all">Tous les projets (5)</button>
+          <button class="pill" data-filter="github">Dépôts GitHub (Code)</button>
+          <button class="pill" data-filter="academique">Thèse &amp; Recherche</button>
         </div>
       </div>
 
       <div class="projects-grid">
-        <!-- Project 1: FOMC Tone -->
-        <article class="project-card" data-category="quant">
+        <!-- Projet GitHub 1 : FOMC -->
+        <article class="project-card" data-category="github">
           <div class="card-top">
             <div class="project-meta">
-              <span class="tag tag-quant">Quantitative Macro & NLP</span>
-              <span class="tag tag-mono">Python 3.11+ • CLI Package</span>
+              <span class="tag tag-quant">Macro-Finance Quantitative &amp; NLP</span>
+              <span class="tag tag-mono">Python 3.11+ • Package CLI</span>
             </div>
-            <h3>Expected FOMC Tone and Market Reactions</h3>
+            <h3>Expected FOMC Tone &amp; Réactions de Marché</h3>
             <p class="project-desc">
-              End-to-end empirical research pipeline testing whether 30-minute intraday movements in the S&amp;P 500, Treasury yields, and OIS rates respond to the <em>unexpected</em> hawkish/dovish tone of Federal Reserve statements.
+              Étude empirique analysant si les marchés financiers (S&amp;P 500, taux OIS et rendements des Treasuries US) réagissent dans une fenêtre intrajournalière de 30 minutes lorsque le communiqué de la Réserve Fédérale (FOMC) s'avère plus <em>hawkish</em> ou <em>dovish</em> qu'anticipé avant l'annonce.
             </p>
 
             <div class="formula-box">
-              <div class="formula-title">CORE INNOVATION IDENTITY</div>
+              <div class="formula-title">INNOVATION DE TON MONÉTAIRE</div>
               <code>tone_innovation[t] = actual_tone[t] − predicted_tone[t]</code>
             </div>
 
             <div class="highlights">
-              <h4>Key Architecture &amp; Findings</h4>
+              <h4>Architecture &amp; Méthodologie</h4>
               <ul>
-                <li><strong>Continuous NLP Scoring:</strong> Uses Delta-Consistent Scoring (DCS, <code>0=dovish</code> to <code>1=hawkish</code>) benchmarked against FedNLP manual labels and transparent YAML dictionaries.</li>
-                <li><strong>Walk-Forward Forecasting:</strong> Generates strictly out-of-sample tone forecasts from pre-announcement FRED macro series, VIX, Treasury yields, dollar index, and SPY features using Persistence, Ridge, ElasticNet, and Shallow Random Forests.</li>
-                <li><strong>Intraday Event-Study Regressions:</strong> 30-minute SF Fed USMPD window regressions with HC3 heteroskedasticity-robust standard errors and futures-based policy surprise controls (<code>MP1</code>, <code>MP2</code>).</li>
-                <li><strong>Production-Grade Packaging:</strong> Installable <code>fomc-tone</code> CLI, 5 reproducible Jupyter notebooks, pinned external commits, and 15+ unit &amp; research-design tests.</li>
+                <li><strong>Mesure continue du ton (NLP) :</strong> Score Delta-Consistent Scoring (DCS, <code>0 = dovish</code> à <code>1 = hawkish</code>) croisé avec le benchmark FedNLP et des dictionnaires thématiques (inflation, croissance, politique monétaire).</li>
+                <li><strong>Prévision hors-échantillon (Walk-Forward) :</strong> Estimation du ton attendu uniquement à partir d'indicateurs pré-annonce (FRED, VIX, taux directeurs, indice dollar, SPY) via persistance, Ridge, ElasticNet et Random Forest sans fuite temporelle.</li>
+                <li><strong>Étude d'événement intrajournalière (30 min) :</strong> Régressions sur les données haute fréquence SF Fed USMPD avec erreurs standards robustes HC3 et contrôle des surprises de taux à terme (<code>MP1</code>, <code>MP2</code>).</li>
+                <li><strong>Ingénierie logicielle :</strong> Package Python installable (<code>fomc-tone</code>), 5 notebooks reproductibles et suite de tests unitaires &amp; économétriques (Pytest).</li>
               </ul>
             </div>
           </div>
 
           <div class="card-footer">
             <div class="tech-tags">
+              <span>Python</span>
               <span>NLP / DCS / FedNLP</span>
               <span>Walk-Forward ML</span>
-              <span>HC3 Event Study</span>
-              <span>FRED &amp; USMPD</span>
-              <span>Pytest</span>
+              <span>Event Study 30-min</span>
+              <span>HC3 / USMPD / FRED</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/rfekir24-cloud/fomc-tone-market-reactions" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                View Repository on GitHub ↗
+                Voir le dépôt sur GitHub (fomc-tone-market-reactions) ↗
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Project 2: Retail Engagement -->
-        <article class="project-card" data-category="ml">
+        <!-- Projet GitHub 2 : Retail Engagement -->
+        <article class="project-card" data-category="github">
           <div class="card-top">
             <div class="project-meta">
-              <span class="tag tag-ml">Customer Analytics &amp; Explainable ML</span>
+              <span class="tag tag-ml">Machine Learning Prédictif &amp; Scoring</span>
               <span class="tag tag-mono">Scikit-Learn • SHAP</span>
             </div>
-            <h3>Online Retail Customer Engagement Baseline</h3>
+            <h3>Prédiction de l'Engagement Client à 30 Jours (Online Retail)</h3>
             <p class="project-desc">
-              Leak-safe predictive modeling framework estimating 30-day customer repurchase probability on the UCI Online Retail transactional dataset, with calibrated probability outputs and feature explainability.
+              Pipeline reproductible de Machine Learning prédisant la probabilité qu'un client réalise au moins un achat non annulé dans les 30 jours suivant une date de coupure temporelle sur le jeu de données transactionnel UCI Online Retail.
             </p>
 
             <div class="formula-box">
-              <div class="formula-title">TEMPORAL SPLIT PROTOCOL</div>
-              <code>History ≤ P80(InvoiceDate)  →  Target ∈ (Cutoff, Cutoff + 30d]</code>
+              <div class="formula-title">PROTOCOLE TEMPOREL SANS FUITE (LEAK-SAFE)</div>
+              <code>Historique ≤ P80(InvoiceDate)  →  Cible ∈ (Cutoff, Cutoff + 30j]</code>
             </div>
 
             <div class="highlights">
-              <h4>Key Architecture &amp; Findings</h4>
+              <h4>Architecture &amp; Méthodologie</h4>
               <ul>
-                <li><strong>Strict Leak Prevention:</strong> Enforces an 80th-percentile temporal cutoff on invoice timestamps so customer features only use historical transactions prior to the prediction window.</li>
-                <li><strong>Behavioral Feature Store:</strong> Engineers Recency, Frequency, Monetary (RFM) metrics, basket statistics, unique product counts, interpurchase intervals, and cancellation ratios.</li>
-                <li><strong>Calibrated Classification:</strong> Benchmarks Logistic Regression and Gradient Boosting pipelines across ROC-AUC, PR-AUC, optimal F1 precision-recall threshold, Brier score, and reliability curves.</li>
-                <li><strong>Model Explainability:</strong> Combines linear coefficient inspection, tree feature importances, and SHAP attributions with serialized model artifacts (<code>model.joblib</code>).</li>
+                <li><strong>Découpage temporel strict :</strong> Définition du seuil au 80<sup>e</sup> centile des dates de facturation pour isoler les variables historiques de la fenêtre de labellisation à 30 jours.</li>
+                <li><strong>Feature Engineering comportemental :</strong> Agrégation par client (Récence, Fréquence, Montant — RFM, statistiques de panier, diversité produits, intervalles inter-achats, taux d'annulation).</li>
+                <li><strong>Modélisation &amp; Calibration :</strong> Pipelines Régression Logistique et Gradient Boosting évalués via ROC-AUC, PR-AUC, seuil F1 optimal, courbe de calibration et score de Brier.</li>
+                <li><strong>Explicabilité :</strong> Analyse des coefficients linéaires, importance des variables par arbres et valeurs SHAP, avec sauvegarde du modèle (<code>model.joblib</code>).</li>
               </ul>
             </div>
           </div>
 
           <div class="card-footer">
             <div class="tech-tags">
+              <span>Python</span>
               <span>Scikit-Learn</span>
               <span>Gradient Boosting</span>
-              <span>RFM Engineering</span>
-              <span>Calibration &amp; Brier</span>
-              <span>SHAP</span>
+              <span>Feature Engineering RFM</span>
+              <span>Calibration &amp; SHAP</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/rfekir24-cloud/-Retail-Engagement-Project" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                View Repository on GitHub ↗
+                Voir le dépôt sur GitHub (-Retail-Engagement-Project) ↗
               </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet Académique 1 : Thèse M2 ETF -->
+        <article class="project-card project-card-compact" data-category="academique">
+          <div class="card-top">
+            <div class="project-meta">
+              <span class="tag tag-gold">Thèse de Master 2 IFM</span>
+              <span class="tag tag-mono">Université de Lorraine</span>
+            </div>
+            <h3>Performance et Risque : ETF Sectoriels vs. ETF Indiciels</h3>
+            <p class="project-desc">
+              Analyse quantitative et comparative des indicateurs de performance ajustée du risque (Sharpe, Sortino, Alpha de Jensen, Tracking Error, Value-at-Risk, Maximum Drawdown) des ETF sectoriels par rapport aux ETF indiciels larges.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tech-tags">
+              <span>Gestion de Portefeuille</span>
+              <span>ETF Sectoriels &amp; Indiciels</span>
+              <span>Mesures de Risque</span>
+              <span>Économétrie Financière</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet Académique 2 : Séries Temporelles FFER -->
+        <article class="project-card project-card-compact" data-category="academique">
+          <div class="card-top">
+            <div class="project-meta">
+              <span class="tag tag-quant">Économétrie des Séries Temporelles</span>
+              <span class="tag tag-mono">Université de Lorraine</span>
+            </div>
+            <h3>Impact du Taux des Fonds Fédéraux (FFER) &amp; Volatilité</h3>
+            <p class="project-desc">
+              Analyse économétrique de l'impact du taux effectif des Fonds Fédéraux (FFER) sur le crédit, l'investissement et la stabilité financière mondiale à l'aide de modèles <strong>ARIMA</strong> et <strong>VAR</strong>, complétée par des prévisions de volatilité conditionnelle via les modèles <strong>ARCH/GARCH</strong>.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tech-tags">
+              <span>ARIMA / VAR</span>
+              <span>ARCH / GARCH</span>
+              <span>Politique Monétaire (FFER)</span>
+              <span>EViews / Python / R</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet Académique 3 : Directive CSRD -->
+        <article class="project-card project-card-compact" data-category="academique">
+          <div class="card-top">
+            <div class="project-meta">
+              <span class="tag tag-ml">Finance Durable &amp; Réglementation</span>
+              <span class="tag tag-mono">Université de Lorraine</span>
+            </div>
+            <h3>Impact de la Directive CSRD sur la Performance Financière</h3>
+            <p class="project-desc">
+              Étude de recherche et d'analyse empirique portant sur l'impact de la directive européenne <strong>CSRD (Corporate Sustainability Reporting Directive)</strong> sur la performance financière et la valorisation des entreprises européennes.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tech-tags">
+              <span>Directive CSRD / ESG</span>
+              <span>Performance Financière</span>
+              <span>Économétrie de Panel</span>
+              <span>Réglementation Européenne</span>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="methodology" class="section">
-      <span class="eyebrow">RESEARCH STANDARDS</span>
-      <h2>Engineering &amp; Econometric Principles</h2>
-      <div class="principles-grid">
-        <div class="principle-card">
-          <div class="principle-num">01</div>
-          <h3>Zero Look-Ahead Leakage</h3>
-          <p>Every forecasting and classification pipeline enforces strict chronological boundaries—expanding walk-forward windows for macro events and percentile cutoffs for transactional cohorts.</p>
+    <!-- Expériences Professionnelles -->
+    <section id="experiences" class="section">
+      <span class="eyebrow">PARCOURS PROFESSIONNEL</span>
+      <h2>Expériences Professionnelles</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Assistant Data / Business Analyst – Automatisation &amp; Reporting</h3>
+              <span class="timeline-company">TechIndus Solutions — Strasbourg, France</span>
+            </div>
+            <span class="timeline-date">Mars 2025 – Juillet 2025</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Conception d'un processus automatisé de traitement et de structuration des données de production (<strong>Python, SQL</strong>).</li>
+            <li>Développement de dashboards interactifs sous <strong>Power BI</strong> pour le pilotage des indicateurs clés (OEE, arrêts machine, taux de défaut).</li>
+            <li>Appui à la gestion de projet : recueil des besoins métiers, suivi des livrables et coordination avec les équipes techniques.</li>
+          </ul>
         </div>
-        <div class="principle-card">
-          <div class="principle-num">02</div>
-          <h3>Econometric &amp; Calibration Rigor</h3>
-          <p>Models are audited beyond point accuracy using HC3 robust inference, monetary policy futures surprise controls (MP1/MP2), precision-recall thresholds, and Brier calibration curves.</p>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Employé Polyvalent de Magasin – Gestion, Caisse &amp; Conformité</h3>
+              <span class="timeline-company">LIDL FRANCE — Metz, France (Job étudiant en parallèle du Master)</span>
+            </div>
+            <span class="timeline-date">Septembre 2024 – Aujourd'hui</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Approvisionnement, gestion de la qualité, production et service client, avec contrôle du respect des procédures, des normes légales et de la politique commerciale.</li>
+          </ul>
         </div>
-        <div class="principle-card">
-          <div class="principle-num">03</div>
-          <h3>Deterministic Reproducibility</h3>
-          <p>External benchmarks are pinned to immutable Git commits, data provenance is checksum-verified, and research-design invariants are enforced via automated test suites.</p>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Stagiaire de Recherche en Économie &amp; Crypto-Actifs</h3>
+              <span class="timeline-company">GATE – Groupe d'Analyse et de Théorie Économique – CNRS (UMR5824) — Saint-Étienne, France</span>
+            </div>
+            <span class="timeline-date">Avril 2022 – Juin 2022</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Étude sur l'évolution de la <strong>Blockchain</strong> : analyse de l'expansion du consensus <em>Proof of Stake (PoS)</em> et étude des mesures de sécurité (enjeux et solutions face à la criminalité dans l'univers des cryptomonnaies).</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Assistant Chargé d'Affaires Entreprises</h3>
+              <span class="timeline-company">Banque Centrale Populaire – Centre d'Affaires — Oujda, Maroc</span>
+            </div>
+            <span class="timeline-date">Juin 2021 – Août 2021</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Gestion d'un portefeuille corporate international et supervision des opérations bancaires courantes.</li>
+            <li>Analyse du risque financier, revue <strong>KYC</strong> et élaboration de dossiers de crédit.</li>
+            <li>Appui commercial : suivi des flux, prospection et relation client.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Assistant Comptable et Financier</h3>
+              <span class="timeline-company">Fiduciaire TIB COMPT (S.A.R.L) — Oujda, Maroc</span>
+            </div>
+            <span class="timeline-date">Janvier 2021 – Mars 2021</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Gestion des opérations comptables, participation à l'élaboration du bilan, à l'analyse financière et à la conformité fiscale.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="stack" class="section">
-      <span class="eyebrow">TOOLING</span>
-      <h2>Technical Stack</h2>
-      <div class="stack-table-wrap">
-        <table class="stack-table">
-          <thead>
-            <tr>
-              <th>Layer</th>
-              <th>Technologies &amp; Methods</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Languages &amp; Core</strong></td>
-              <td>Python 3.11+, SQL, Bash, Git, CLI Packaging (<code>pyproject.toml</code>)</td>
-            </tr>
-            <tr>
-              <td><strong>Econometrics &amp; Stats</strong></td>
-              <td>OLS with HC3 Robust SEs, Intraday Event Studies, Walk-Forward Validation, Probability Calibration, Brier Score</td>
-            </tr>
-            <tr>
-              <td><strong>Machine Learning &amp; NLP</strong></td>
-              <td>Scikit-Learn (Ridge, ElasticNet, Random Forest, Gradient Boosting, Logistic Regression), Delta-Consistent Scoring (DCS), FedNLP, SHAP</td>
-            </tr>
-            <tr>
-              <td><strong>Data &amp; Financial Feeds</strong></td>
-              <td>Federal Reserve Statements, SF Fed USMPD, FRED API, Yahoo Finance, UCI Transactional Logs</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Formation -->
+    <section id="formation" class="section">
+      <span class="eyebrow">CURSUS UNIVERSITAIRE</span>
+      <h2>Formation Académique</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Master 2 IFM – Ingénierie Financière de Marché</h3>
+              <span class="timeline-company">Université de Lorraine – Faculté de Droit, Économie et Administration — Metz, France</span>
+            </div>
+            <span class="timeline-date">2023 – 2026</span>
+          </div>
+          <p class="timeline-text">
+            <strong>Enseignements clés :</strong> Évaluation des actifs financiers, Modèles stochastiques pour la finance de marché, Théorie de la finance, Économétrie des séries temporelles financières, Gestion de portefeuille, Options et produits dérivés, Enjeux réglementaires en finance, <em>Dynamic and financial macroeconomics for global economy</em>.
+          </p>
+          <p class="timeline-text">
+            <strong>Thèse :</strong> <em>Analyse quantitative et comparative des indicateurs de performance et de risque des ETF Sectoriels par rapport aux ETF Indiciels.</em>
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Master 1 Analyse et Politique Économique</h3>
+              <span class="timeline-company">Université Jean Monnet – Saint-Etienne School of Economics — Saint-Étienne, France</span>
+            </div>
+            <span class="timeline-date">2022 – 2023</span>
+          </div>
+          <p class="timeline-text">
+            <strong>Enseignements clés :</strong> Data Management &amp; Information Systems, Économétrie d'évaluation des programmes, Économie monétaire et bancaire, Économie de la concurrence, Évaluation des politiques publiques, Économie de l'innovation, Théorie des graphes, Théorie de la décision.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Licence en Économie Appliquée</h3>
+              <span class="timeline-company">Université Jean Monnet – IAE Saint-Etienne — Saint-Étienne, France</span>
+            </div>
+            <span class="timeline-date">2018 – 2022</span>
+          </div>
+          <p class="timeline-text">
+            <strong>Enseignements clés :</strong> Économétrie, Statistique Inférentielle, Business Intelligence, Comptabilité Analytique, Finance Internationale, Recherche Opérationnelle, Finance d'entreprise, Macroéconomie, Fiscalité de l'entreprise, Introduction à la programmation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences & Langues -->
+    <section id="competences" class="section">
+      <span class="eyebrow">EXPERTISE &amp; OUTILS</span>
+      <h2>Compétences Techniques, Langues &amp; Intérêts</h2>
+
+      <div class="principles-grid">
+        <div class="principle-card">
+          <div class="principle-num">programmation &amp; quant</div>
+          <h3>Data Science &amp; Économétrie</h3>
+          <p><strong>Python</strong> (Pandas, NumPy, Scikit-Learn, Statsmodels, Pytest), <strong>RStudio</strong>, <strong>SQL</strong>, <strong>EViews</strong>, <strong>VBA</strong>, <strong>LaTeX</strong>. Modélisation ARIMA, VAR, ARCH/GARCH, Machine Learning &amp; NLP.</p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-num">business intelligence &amp; erp</div>
+          <h3>Pilotage &amp; Reporting Financier</h3>
+          <p><strong>Power BI</strong>, <strong>Tableau</strong>, <strong>SAP BO</strong>, <strong>ODOO</strong>, <strong>Office 365 (Excel avancé)</strong>. Conception de tableaux de bord interactifs, automatisation de flux de données et analyse de risques.</p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-num">profil &amp; langues</div>
+          <h3>Langues &amp; Soft Skills</h3>
+          <p>
+            <strong>Français :</strong> Courant • <strong>Anglais :</strong> Courant • <strong>Arabe :</strong> Langue maternelle.<br />
+            Esprit analytique, rigueur, sens du détail, gestion de projets, travail en équipe.<br />
+            <em>Activités :</em> Musculation, Natation, Volontariat, Sports Automobiles.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -218,13 +408,15 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <strong>Redouan Fekir</strong> — Quantitative Finance &amp; Machine Learning Portfolio
+        <strong>Redouan FEKIR</strong> — Master 2 Ingénierie Financière de Marché • Université de Lorraine
       </div>
       <div class="footer-links">
+        <a href="assets/Redouan_FEKIR_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+        <a href="https://www.linkedin.com/in/redouanfekir-rf/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://github.com/rfekir24-cloud/fomc-tone-market-reactions" target="_blank" rel="noopener noreferrer">FOMC Tone Repo</a>
-        <a href="https://github.com/rfekir24-cloud/-Retail-Engagement-Project" target="_blank" rel="noopener noreferrer">Retail Engagement Repo</a>
-        <a href="mailto:r.fekir24@gmail.com">r.fekir24@gmail.com</a>
+        <a href="https://github.com/rfekir24-cloud/fomc-tone-market-reactions" target="_blank" rel="noopener noreferrer">Projet FOMC</a>
+        <a href="https://github.com/rfekir24-cloud/-Retail-Engagement-Project" target="_blank" rel="noopener noreferrer">Projet Retail ML</a>
+        <a href="mailto:fekir.redouan@gmail.com">fekir.redouan@gmail.com</a>
       </div>
     </div>
   </footer>
