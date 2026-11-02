@@ -149,12 +149,14 @@ body {
 }
 
 .profile-avatar {
-  width: 112px;
-  height: 112px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(56, 189, 248, 0.5);
-  box-shadow: 0 0 28px rgba(56, 189, 248, 0.22);
+  object-position: center top;
+  border: 2px solid rgba(56, 189, 248, 0.55);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.25);
+  background: #f8fafc;
 }
 
 .hero-badge {

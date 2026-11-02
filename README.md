@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/profile.png" alt="Redouan FEKIR" width="130" style="border-radius: 50%;" />
+
 # Redouan FEKIR — Portfolio Ingénierie Financière de Marché, Quant & Data
 
 **Master 2 Ingénierie Financière de Marché – Université de Lorraine (Metz, France)**
