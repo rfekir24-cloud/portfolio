@@ -195,27 +195,238 @@ body {
   color: var(--text);
 }
 
-.contact-bar {
+/* Interactive Contact Hub */
+.contact-hub {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
-.contact-bar a {
+.contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(17, 24, 39, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
   color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px dashed rgba(148, 163, 184, 0.4);
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.contact-bar a:hover {
-  color: var(--accent);
+.contact-chip:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 8px 24px -6px rgba(56, 189, 248, 0.25);
+}
+
+.chip-icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.contact-chip:hover .chip-icon {
+  transform: scale(1.12);
+}
+
+.contact-chip-group {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(17, 24, 39, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-chip-group:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 8px 24px -6px rgba(56, 189, 248, 0.25);
+}
+
+.contact-chip-group .contact-chip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-right: 6px;
+}
+
+.contact-chip-group .contact-chip:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.chip-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+
+.chip-action-btn:hover {
+  background: var(--accent);
   border-color: var(--accent);
+  color: #0a0e17;
+  transform: scale(1.08);
+}
+
+.chip-action-btn.copied {
+  background: var(--emerald);
+  border-color: var(--emerald);
+  color: #0a0e17;
+}
+
+/* Tooltip Copier */
+.copy-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #0f172a;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.15s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.chip-action-btn:hover .copy-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Statut Pulsant Localisation */
+.status-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--emerald);
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(52, 211, 153, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+.chip-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(52, 211, 153, 0.12);
+  color: var(--emerald);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.chip-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.external-arrow {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.contact-chip:hover .external-arrow {
+  color: var(--accent);
+  transform: translate(1px, -1px);
+}
+
+/* Couleurs spécifiques aux puces */
+.chip-linkedin:hover {
+  border-color: rgba(10, 102, 194, 0.65);
+  box-shadow: 0 8px 24px -6px rgba(10, 102, 194, 0.35);
+}
+.chip-linkedin:hover .chip-icon {
+  color: #0a66c2;
+}
+
+.chip-github:hover {
+  border-color: rgba(248, 250, 252, 0.4);
+  box-shadow: 0 8px 24px -6px rgba(255, 255, 255, 0.15);
+}
+
+.chip-phone .chip-icon {
+  color: var(--emerald);
+}
+
+.chip-email .chip-icon {
+  color: var(--accent);
+}
+
+/* Toast Feedback Copie */
+.copy-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  color: #f8fafc;
+  padding: 10px 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 16px rgba(52, 211, 153, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999;
+}
+
+.copy-toast svg {
+  color: var(--emerald);
+}
+
+.copy-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .hero-actions {
