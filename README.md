@@ -82,6 +82,7 @@ flowchart LR
 
 | Période | Poste | Entreprise & Lieu | Missions clés |
 | :--- | :--- | :--- | :--- |
+| **Janv. 2026 – Juin 2026** | **Analyste Investigations Criminalité Financière & Économique** | **Attijariwafa bank** (Casablanca, Maroc) | Surveillance des transactions (100+ flux), détection blanchiment/fraude (30+ dossiers clients), revues AML/KYC (100+ profils), échanges autorités (5+ cas/j) et 10+ rapports de direction. |
 | **Mars 2025 – Juil. 2025** | **Assistant Data / Business Analyst – Automatisation & Reporting** | **TechIndus Solutions** (Strasbourg, France) | Automatisation du traitement de données de production (**Python, SQL**), dashboards interactifs **Power BI** (OEE, arrêts machine, taux de défaut), gestion de projet métier/technique. |
 | **Sept. 2024 – Aujourd'hui** | **Employé Polyvalent de Magasin** | **LIDL FRANCE** (Metz, France) | Approvisionnement, gestion de la qualité, contrôle du respect des procédures et normes légales. |
 | **Avril 2022 – Juin 2022** | **Stage de Recherche** | **GATE – CNRS (UMR5824)** (Saint-Étienne, France) | Étude sur l'évolution de la **Blockchain** : expansion de la *Proof of Stake (PoS)* et mesures de sécurité face à la criminalité dans l'univers des cryptomonnaies. |

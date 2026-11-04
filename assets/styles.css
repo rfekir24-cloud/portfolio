@@ -622,6 +622,12 @@ h2 {
   border: 1px solid rgba(251, 191, 36, 0.25);
 }
 
+.tag-aml {
+  background: rgba(244, 63, 94, 0.14);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.28);
+}
+
 .tag-compta {
   background: rgba(129, 140, 248, 0.14);
   color: #818cf8;
