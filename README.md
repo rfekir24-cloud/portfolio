@@ -72,7 +72,7 @@ flowchart LR
 
 ## Thèse & Projets Académiques
 
-- **Thèse de Master 2 IFM (Université de Lorraine) :** *Analyse quantitative et comparative des indicateurs de performance et de risque des ETF Sectoriels par rapport aux ETF Indiciels.*
+- **Thèse de Master (Banque de France / Université de Lorraine) :** *Analyse quantitative et comparative des indicateurs de performance et de risque des ETF Sectoriels par rapport aux ETF Indiciels.*
 - **Économétrie des Séries Temporelles (Université de Lorraine) :** *Analyse de l'impact du taux effectif des Fonds Fédéraux (FFER) sur le crédit, l'investissement et la stabilité financière mondiale à l'aide de modèles ARIMA et VAR et prévisions de volatilité via ARCH/GARCH.*
 - **Étude de Recherche et d'Analyse (Université de Lorraine) :** *L'impact de la directive CSRD (Corporate Sustainability Reporting Directive) sur la performance financière des entreprises européennes.*
 
@@ -95,8 +95,9 @@ flowchart LR
 
 - **2023 – 2026 | Master 2 IFM – Ingénierie Financière de Marché** — *Université de Lorraine (Metz, France)*
   - Évaluation des actifs financiers, Modèles stochastiques pour la finance de marché, Théorie de la finance, Économétrie des séries temporelles financières, Gestion de portefeuille, Options et produits dérivés, Enjeux réglementaires en finance.
-- **2023 – 2025 | Master Expertise Statistique pour l'Économie et la Finance** — *Université de Lorraine – Faculté de Droit, Économie et Administration (Metz, France)*
+- **2022 – 2025 | Master Expertise Statistique pour l'Économie et la Finance** — *Université de Lorraine – Faculté de Droit, Économie et Administration (Metz, France)*
   - Data Management & Information Systems, Économétrie d'évaluation des programmes, Économie monétaire et bancaire, Économie de la concurrence, Évaluation des politiques publiques, Économie de l'innovation, Théorie des graphes, Théorie de la décision.
+  - **Thèse :** *Analyse quantitative et comparative des indicateurs de performance et de risque des ETF Sectoriels par rapport aux ETF Indiciels* — réalisée à la **Banque de France**.
 - **2018 – 2022 | Licence en Économie Appliquée** — *Université Jean Monnet – IAE Saint-Etienne (Saint-Étienne, France)*
   - Économétrie, Statistique Inférentielle, Business Intelligence, Finance Internationale, Finance d'entreprise, Recherche Opérationnelle.
 
