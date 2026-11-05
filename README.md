@@ -95,8 +95,8 @@ flowchart LR
 
 - **2023 – 2026 | Master 2 IFM – Ingénierie Financière de Marché** — *Université de Lorraine (Metz, France)*
   - Évaluation des actifs financiers, Modèles stochastiques pour la finance de marché, Théorie de la finance, Économétrie des séries temporelles financières, Gestion de portefeuille, Options et produits dérivés, Enjeux réglementaires en finance.
-- **2022 – 2023 | Master 1 Analyse et Politique Économique** — *Université Jean Monnet – Saint-Etienne School of Economics (Saint-Étienne, France)*
-  - Data Management & Information Systems, Économétrie d'évaluation des programmes, Économie monétaire et bancaire, Théorie des graphes, Théorie de la décision.
+- **2023 – 2025 | Master Expertise Statistique pour l'Économie et la Finance** — *Université de Lorraine – Faculté de Droit, Économie et Administration (Metz, France)*
+  - Data Management & Information Systems, Économétrie d'évaluation des programmes, Économie monétaire et bancaire, Économie de la concurrence, Évaluation des politiques publiques, Économie de l'innovation, Théorie des graphes, Théorie de la décision.
 - **2018 – 2022 | Licence en Économie Appliquée** — *Université Jean Monnet – IAE Saint-Etienne (Saint-Étienne, France)*
   - Économétrie, Statistique Inférentielle, Business Intelligence, Finance Internationale, Finance d'entreprise, Recherche Opérationnelle.
 
