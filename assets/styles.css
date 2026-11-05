@@ -46,23 +46,43 @@ body {
   padding: 0 24px;
 }
 
-/* Navbar */
+/* Navbar (Effet translucide au défilement) */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: blur(12px);
-  background: rgba(246, 243, 235, 0.94);
+  background: rgba(246, 243, 235, 0.95);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              backdrop-filter 0.3s ease,
+              -webkit-backdrop-filter 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* État translucide quand on descend sur la page */
+.navbar.scrolled {
+  background: rgba(246, 243, 235, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(227, 220, 206, 0.85);
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.06);
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 68px;
   gap: 16px;
+  transition: height 0.3s ease;
+}
+
+.navbar.scrolled .nav-inner {
+  height: 62px;
 }
 
 .brand {

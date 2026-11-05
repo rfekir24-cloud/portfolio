@@ -679,6 +679,18 @@
   </footer>
 
   <script>
+    // Transparence dynamique de la barre de navigation au défilement (scroll)
+    const navbar = document.querySelector('.navbar');
+    function handleNavbarScroll() {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+    window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+    handleNavbarScroll();
+
     // Filtrage des projets
     const pills = document.querySelectorAll('.pill');
     const cards = document.querySelectorAll('.project-card');
