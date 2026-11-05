@@ -218,32 +218,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 34px;
+  margin: 0 auto 34px;
+  width: 100%;
+}
+
+.contact-hub-dock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 5px 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 218, 206, 0.9);
+  border-radius: 999px;
+  box-shadow: 0 4px 16px -2px rgba(44, 40, 34, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+  max-width: 100%;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-hub-dock:hover {
+  box-shadow: 0 8px 24px -4px rgba(44, 40, 34, 0.1), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-color: rgba(200, 188, 172, 0.95);
 }
 
 .contact-chip {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 15px;
+  gap: 7px;
+  padding: 7px 12px;
   background: #ffffff;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(226, 218, 206, 0.8);
   border-radius: 999px;
   color: var(--text);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 500;
   text-decoration: none;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  position: relative;
 }
 
 .contact-chip:hover {
   transform: translateY(-2px);
   color: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 8px 20px -4px rgba(2, 132, 199, 0.2);
+  box-shadow: 0 6px 16px -3px rgba(2, 132, 199, 0.22);
 }
 
 .chip-icon {
@@ -255,27 +277,29 @@ body {
   transform: scale(1.12);
 }
 
+/* Contact Chip Group (Téléphone & Email avec bouton Copier) */
 .contact-chip-group {
   display: inline-flex;
   align-items: center;
   background: #ffffff;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(226, 218, 206, 0.8);
   border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
 }
 
 .contact-chip-group:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
-  box-shadow: 0 8px 20px -4px rgba(2, 132, 199, 0.2);
+  box-shadow: 0 6px 16px -3px rgba(2, 132, 199, 0.22);
 }
 
 .contact-chip-group .contact-chip {
   background: transparent;
   border: none;
   box-shadow: none;
-  padding-right: 6px;
+  padding: 7px 6px 7px 12px;
 }
 
 .contact-chip-group .contact-chip:hover {
@@ -287,15 +311,15 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  margin-right: 6px;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
   border-radius: 50%;
   background: var(--surface-elevated);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(226, 218, 206, 0.85);
   color: var(--text-secondary);
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
 }
 
@@ -303,13 +327,18 @@ body {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
-  transform: scale(1.08);
+  transform: scale(1.1);
+}
+
+.chip-action-btn:active {
+  transform: scale(0.92);
 }
 
 .chip-action-btn.copied {
-  background: var(--emerald);
-  border-color: var(--emerald);
-  color: #ffffff;
+  background: var(--emerald) !important;
+  border-color: var(--emerald) !important;
+  color: #ffffff !important;
+  transform: scale(1.1);
 }
 
 /* Tooltip Copier */
@@ -329,11 +358,21 @@ body {
   opacity: 0;
   transition: all 0.15s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .chip-action-btn:hover .copy-tooltip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* Séparateur élégant dans le Dock */
+.contact-hub-sep {
+  width: 1px;
+  height: 20px;
+  background: rgba(148, 163, 184, 0.35);
+  margin: 0 3px;
+  flex-shrink: 0;
 }
 
 /* Statut Pulsant Localisation */
@@ -344,6 +383,7 @@ body {
   background: var(--emerald);
   box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
   animation: pulse-dot 2s infinite;
+  flex-shrink: 0;
 }
 
 @keyframes pulse-dot {
@@ -363,35 +403,32 @@ body {
 
 .chip-badge {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   padding: 1px 6px;
   border-radius: 4px;
   background: rgba(5, 150, 105, 0.1);
   color: var(--emerald);
-  border: 1px solid rgba(5, 150, 105, 0.22);
-}
-
-.chip-sub {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-secondary);
+  border: 1px solid rgba(5, 150, 105, 0.25);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .external-arrow {
   color: var(--text-muted);
   font-size: 0.82rem;
-  transition: transform 0.15s ease, color 0.15s ease;
+  transition: transform 0.18s ease, color 0.18s ease;
 }
 
 .contact-chip:hover .external-arrow {
   color: var(--accent);
-  transform: translate(1px, -1px);
+  transform: translate(2px, -2px);
 }
 
 /* Couleurs spécifiques aux puces */
 .chip-linkedin:hover {
-  border-color: rgba(10, 102, 194, 0.65);
-  box-shadow: 0 8px 20px -4px rgba(10, 102, 194, 0.25);
+  border-color: rgba(10, 102, 194, 0.7);
+  box-shadow: 0 6px 18px -3px rgba(10, 102, 194, 0.25);
+  color: #0a66c2;
 }
 .chip-linkedin .chip-icon {
   color: #0a66c2;
@@ -399,18 +436,67 @@ body {
 
 .chip-github:hover {
   border-color: #0f172a;
-  box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.15);
+  box-shadow: 0 6px 18px -3px rgba(15, 23, 42, 0.18);
+  color: #0f172a;
 }
 .chip-github .chip-icon {
   color: #0f172a;
 }
 
+.chip-phone:hover {
+  color: var(--emerald);
+}
 .chip-phone .chip-icon {
   color: var(--emerald);
 }
 
+.chip-email:hover {
+  color: var(--accent);
+}
 .chip-email .chip-icon {
   color: var(--accent);
+}
+
+.chip-location:hover {
+  border-color: var(--emerald);
+  box-shadow: 0 6px 18px -3px rgba(5, 150, 105, 0.22);
+  color: #065f46;
+}
+.chip-location .chip-icon {
+  color: var(--emerald);
+}
+
+/* Responsive pour le Contact Hub */
+@media (max-width: 860px) {
+  .contact-hub-dock {
+    border-radius: 20px;
+    padding: 8px 12px;
+    gap: 7px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-hub-sep {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .contact-hub-dock {
+    width: 100%;
+    border-radius: 16px;
+    padding: 10px;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .contact-chip,
+  .contact-chip-group {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-chip-group .contact-chip {
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 /* Toast Feedback Copie */

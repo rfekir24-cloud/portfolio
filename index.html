@@ -41,53 +41,57 @@
       </p>
 
       <!-- Interactive Contact Hub -->
-      <div class="contact-hub" role="region" aria-label="Coordonnées et réseaux">
-        <!-- Localisation avec badge statut actif -->
-        <a href="https://maps.google.com/?q=Metz,France" target="_blank" rel="noopener noreferrer" class="contact-chip chip-location" title="Voir sur Google Maps">
-          <span class="status-pulse"></span>
-          <svg class="chip-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"/><circle cx="12" cy="9" r="3"/></svg>
-          <span class="chip-text">Metz, France</span>
-          <span class="chip-badge">Mobilité</span>
-        </a>
-
-        <!-- Téléphone avec appel direct + copie 1-clic -->
-        <div class="contact-chip-group">
-          <a href="tel:+33754590633" class="contact-chip chip-phone" title="Appeler le +33 (0)7 54 59 06 33">
-            <svg class="chip-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span class="chip-text">+33 (0)7 54 59 06 33</span>
+      <div class="contact-hub" role="region" aria-label="Coordonnées et réseaux professionnels">
+        <div class="contact-hub-dock">
+          <!-- Localisation avec statut actif -->
+          <a href="https://maps.google.com/?q=Metz,France" target="_blank" rel="noopener noreferrer" class="contact-chip chip-location" title="Metz, France • Mobilité nationale & internationale">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <svg class="chip-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"/><circle cx="12" cy="9" r="3"/></svg>
+            <span class="chip-text">Metz, France</span>
+            <span class="chip-badge">Mobilité</span>
           </a>
-          <button type="button" class="chip-action-btn" data-copy="+33754590633" title="Copier le numéro" aria-label="Copier le numéro de téléphone">
-            <svg class="copy-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="copy-tooltip">Copier</span>
-          </button>
-        </div>
 
-        <!-- Email avec mailto + copie 1-clic -->
-        <div class="contact-chip-group">
-          <a href="mailto:fekir.redouan@gmail.com" class="contact-chip chip-email" title="Envoyer un email à fekir.redouan@gmail.com">
-            <svg class="chip-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span class="chip-text">fekir.redouan@gmail.com</span>
+          <!-- Téléphone avec appel direct + copie 1-clic -->
+          <div class="contact-chip-group">
+            <a href="tel:+33754590633" class="contact-chip chip-phone" title="Cliquer pour appeler (+33 7 54 59 06 33)">
+              <svg class="chip-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span class="chip-text">+33 (0)7 54 59 06 33</span>
+            </a>
+            <button type="button" class="chip-action-btn" data-copy="+33754590633" title="Copier le numéro" aria-label="Copier le numéro de téléphone">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-tooltip">Copier</span>
+            </button>
+          </div>
+
+          <!-- Email avec mailto + copie 1-clic -->
+          <div class="contact-chip-group">
+            <a href="mailto:fekir.redouan@gmail.com" class="contact-chip chip-email" title="Cliquer pour écrire (fekir.redouan@gmail.com)">
+              <svg class="chip-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span class="chip-text">fekir.redouan@gmail.com</span>
+            </a>
+            <button type="button" class="chip-action-btn" data-copy="fekir.redouan@gmail.com" title="Copier l'email" aria-label="Copier l'adresse email">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="copy-tooltip">Copier</span>
+            </button>
+          </div>
+
+          <!-- Séparateur discret -->
+          <span class="contact-hub-sep" aria-hidden="true"></span>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/redouanfekir-rf/" target="_blank" rel="noopener noreferrer" class="contact-chip chip-linkedin" title="Consulter le profil LinkedIn de Redouan FEKIR">
+            <svg class="chip-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0-.01-3.28 1.64 1.64 0 0 0 .01 3.28m1.4 9.74v-8.37H5.06v8.37z"/></svg>
+            <span class="chip-text">LinkedIn</span>
+            <span class="external-arrow">↗</span>
           </a>
-          <button type="button" class="chip-action-btn" data-copy="fekir.redouan@gmail.com" title="Copier l'email" aria-label="Copier l'adresse email">
-            <svg class="copy-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="copy-tooltip">Copier</span>
-          </button>
+
+          <!-- GitHub synthétique -->
+          <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer" class="contact-chip chip-github" title="Explorer le GitHub @rfekir24-cloud">
+            <svg class="chip-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span class="chip-text">GitHub</span>
+            <span class="external-arrow">↗</span>
+          </a>
         </div>
-
-        <!-- LinkedIn interactif -->
-        <a href="https://www.linkedin.com/in/redouanfekir-rf/" target="_blank" rel="noopener noreferrer" class="contact-chip chip-linkedin" title="Consulter le profil LinkedIn de Redouan FEKIR">
-          <svg class="chip-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0-.01-3.28 1.64 1.64 0 0 0 .01 3.28m1.4 9.74v-8.37H5.06v8.37z"/></svg>
-          <span class="chip-text">LinkedIn</span>
-          <span class="external-arrow">↗</span>
-        </a>
-
-        <!-- GitHub interactif -->
-        <a href="https://github.com/rfekir24-cloud" target="_blank" rel="noopener noreferrer" class="contact-chip chip-github" title="Explorer les dépôts GitHub de rfekir24-cloud">
-          <svg class="chip-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-          <span class="chip-text">GitHub</span>
-          <span class="chip-sub">@rfekir24-cloud</span>
-          <span class="external-arrow">↗</span>
-        </a>
       </div>
 
       <!-- Toast Feedback Copie -->
@@ -731,6 +735,8 @@
         const valueToCopy = btn.dataset.copy;
         const tooltip = btn.querySelector('.copy-tooltip');
         const originalTooltip = tooltip ? tooltip.textContent : 'Copier';
+        const iconSvg = btn.querySelector('.copy-icon');
+        const originalSvgHtml = iconSvg ? iconSvg.innerHTML : '';
 
         try {
           if (navigator.clipboard && window.isSecureContext) {
@@ -744,8 +750,11 @@
             document.body.removeChild(tempInput);
           }
 
-          // Effet visuel sur le bouton
+          // Effet visuel immédiat : icône transformée en coche + classe copied
           btn.classList.add('copied');
+          if (iconSvg) {
+            iconSvg.innerHTML = '<polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5"></polyline>';
+          }
           if (tooltip) tooltip.textContent = 'Copié !';
 
           // Message toast adapté
@@ -754,6 +763,7 @@
 
           setTimeout(() => {
             btn.classList.remove('copied');
+            if (iconSvg) iconSvg.innerHTML = originalSvgHtml;
             if (tooltip) tooltip.textContent = originalTooltip;
           }, 1800);
         } catch (err) {
