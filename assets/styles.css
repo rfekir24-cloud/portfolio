@@ -222,84 +222,90 @@ body {
   width: 100%;
 }
 
+/* Le décor en arrière-plan : dock élégant, parfaitement dimensionné et centré */
 .contact-hub-dock {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
-  padding: 5px 8px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(226, 218, 206, 0.9);
+  gap: 6px;
+  padding: 6px 8px;
+  background: var(--surface-elevated);
+  border: 1px solid rgba(215, 205, 190, 0.9);
   border-radius: 999px;
-  box-shadow: 0 4px 16px -2px rgba(44, 40, 34, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 10px rgba(44, 40, 34, 0.05);
+  box-sizing: border-box;
+  flex-wrap: wrap;
   max-width: 100%;
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .contact-hub-dock:hover {
-  box-shadow: 0 8px 24px -4px rgba(44, 40, 34, 0.1), 0 2px 6px rgba(0, 0, 0, 0.04);
-  border-color: rgba(200, 188, 172, 0.95);
+  border-color: rgba(195, 185, 170, 0.95);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03), 0 4px 16px rgba(44, 40, 34, 0.08);
 }
 
+/* Puces individuelles blanches sur le dock */
 .contact-chip {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 7px 12px;
+  gap: 6px;
+  height: 32px;
+  padding: 0 11px;
   background: #ffffff;
-  border: 1px solid rgba(226, 218, 206, 0.8);
+  border: 1px solid rgba(220, 212, 200, 0.85);
   border-radius: 999px;
   color: var(--text);
-  font-size: 0.84rem;
+  font-size: 0.81rem;
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-  position: relative;
+  box-sizing: border-box;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .contact-chip:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   color: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 6px 16px -3px rgba(2, 132, 199, 0.22);
+  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.25);
 }
 
 .chip-icon {
   flex-shrink: 0;
-  transition: transform 0.2s ease;
+  transition: transform 0.18s ease;
 }
 
 .contact-chip:hover .chip-icon {
-  transform: scale(1.12);
+  transform: scale(1.1);
 }
 
 /* Contact Chip Group (Téléphone & Email avec bouton Copier) */
 .contact-chip-group {
   display: inline-flex;
   align-items: center;
+  height: 32px;
   background: #ffffff;
-  border: 1px solid rgba(226, 218, 206, 0.8);
+  border: 1px solid rgba(220, 212, 200, 0.85);
   border-radius: 999px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
   white-space: nowrap;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .contact-chip-group:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: var(--accent);
-  box-shadow: 0 6px 16px -3px rgba(2, 132, 199, 0.22);
+  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.25);
 }
 
 .contact-chip-group .contact-chip {
+  height: 100%;
   background: transparent;
   border: none;
   box-shadow: none;
-  padding: 7px 6px 7px 12px;
+  padding: 0 5px 0 10px;
 }
 
 .contact-chip-group .contact-chip:hover {
@@ -311,16 +317,17 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin-right: 5px;
   border-radius: 50%;
   background: var(--surface-elevated);
-  border: 1px solid rgba(226, 218, 206, 0.85);
+  border: 1px solid rgba(220, 212, 200, 0.9);
   color: var(--text-secondary);
   cursor: pointer;
-  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.16s ease;
   position: relative;
+  flex-shrink: 0;
 }
 
 .chip-action-btn:hover {
@@ -338,26 +345,25 @@ body {
   background: var(--emerald) !important;
   border-color: var(--emerald) !important;
   color: #ffffff !important;
-  transform: scale(1.1);
 }
 
 /* Tooltip Copier */
 .copy-tooltip {
   position: absolute;
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 7px);
   left: 50%;
-  transform: translateX(-50%) translateY(4px);
+  transform: translateX(-50%) translateY(3px);
   background: #0f172a;
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 4px 8px;
-  border-radius: 6px;
+  font-size: 0.7rem;
+  padding: 3px 7px;
+  border-radius: 5px;
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
   transition: all 0.15s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
@@ -366,19 +372,19 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Séparateur élégant dans le Dock */
+/* Séparateur élégant dans le dock */
 .contact-hub-sep {
   width: 1px;
-  height: 20px;
-  background: rgba(148, 163, 184, 0.35);
-  margin: 0 3px;
+  height: 18px;
+  background: rgba(180, 170, 155, 0.45);
+  margin: 0 2px;
   flex-shrink: 0;
 }
 
 /* Statut Pulsant Localisation */
 .status-pulse {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--emerald);
   box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
@@ -393,7 +399,7 @@ body {
   }
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 6px rgba(5, 150, 105, 0);
+    box-shadow: 0 0 0 5px rgba(5, 150, 105, 0);
   }
   100% {
     transform: scale(0.95);
@@ -403,31 +409,34 @@ body {
 
 .chip-badge {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  padding: 1px 6px;
+  font-size: 0.65rem;
+  padding: 0 5px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
   border-radius: 4px;
-  background: rgba(5, 150, 105, 0.1);
+  background: rgba(5, 150, 105, 0.09);
   color: var(--emerald);
-  border: 1px solid rgba(5, 150, 105, 0.25);
+  border: 1px solid rgba(5, 150, 105, 0.22);
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .external-arrow {
   color: var(--text-muted);
-  font-size: 0.82rem;
-  transition: transform 0.18s ease, color 0.18s ease;
+  font-size: 0.78rem;
+  transition: transform 0.16s ease, color 0.16s ease;
 }
 
 .contact-chip:hover .external-arrow {
   color: var(--accent);
-  transform: translate(2px, -2px);
+  transform: translate(1.5px, -1.5px);
 }
 
 /* Couleurs spécifiques aux puces */
 .chip-linkedin:hover {
   border-color: rgba(10, 102, 194, 0.7);
-  box-shadow: 0 6px 18px -3px rgba(10, 102, 194, 0.25);
+  box-shadow: 0 4px 12px -2px rgba(10, 102, 194, 0.25);
   color: #0a66c2;
 }
 .chip-linkedin .chip-icon {
@@ -436,7 +445,7 @@ body {
 
 .chip-github:hover {
   border-color: #0f172a;
-  box-shadow: 0 6px 18px -3px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.18);
   color: #0f172a;
 }
 .chip-github .chip-icon {
@@ -459,20 +468,19 @@ body {
 
 .chip-location:hover {
   border-color: var(--emerald);
-  box-shadow: 0 6px 18px -3px rgba(5, 150, 105, 0.22);
+  box-shadow: 0 4px 12px -2px rgba(5, 150, 105, 0.22);
   color: #065f46;
 }
 .chip-location .chip-icon {
   color: var(--emerald);
 }
 
-/* Responsive pour le Contact Hub */
-@media (max-width: 860px) {
+/* Responsive : Le décor s'adapte parfaitement sur toutes les largeurs d'écran */
+@media (max-width: 768px) {
   .contact-hub-dock {
     border-radius: 20px;
-    padding: 8px 12px;
-    gap: 7px;
-    flex-wrap: wrap;
+    padding: 8px 10px;
+    gap: 6px;
     justify-content: center;
   }
   .contact-hub-sep {
@@ -480,12 +488,12 @@ body {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 540px) {
   .contact-hub-dock {
     width: 100%;
     border-radius: 16px;
-    padding: 10px;
-    gap: 8px;
+    padding: 8px;
+    gap: 6px;
     flex-direction: column;
   }
   .contact-chip,
